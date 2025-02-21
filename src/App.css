@@ -30,3 +30,19 @@
     transform: rotate(360deg);
   }
 }
+
+.bar-expand {
+  display: inline-block;
+  height: 20px;
+  background-color: #3498db;
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.python {
+  background-color: #306998;
+}

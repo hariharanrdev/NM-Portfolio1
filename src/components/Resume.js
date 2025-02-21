@@ -72,23 +72,23 @@ export default  class Resume extends Component {
                {resumeData.skillsDescription}
                </p>
 
-   				<div className="bars">
+          <div className="bars">
+            <ul className="skills">
+              {resumeData.skills &&
+                resumeData.skills.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <span
+                        className={`bar-expand ${item.skillname.toLowerCase()}`}
+                        style={{ width: `${item.proficiency || 75}%` }} // Dynamically sets width if "proficiency" exists
+                      ></span>
+                      <em>{item.skillname}</em>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
 
-   				   <ul className="skills">
-                {
-                  resumeData.skills && resumeData.skills.map((item) => {
-                    return(
-                      <li>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
-                      </li>
-                    )
-                  })
-                }
-
-   					</ul>
-
-   				</div>
 
    			</div>
 

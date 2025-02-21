@@ -13,7 +13,7 @@ let resumeData = {
         },
         {
           "name":"github",
-          "url":"http://github.com/IThariharan",
+          "url":"https://github.com/hariharanrdev",
           "className":"fa fa-github"
         },
         {
